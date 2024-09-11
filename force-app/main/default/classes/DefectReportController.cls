@@ -12,6 +12,7 @@ public with sharing class DefectReportController {
     @AuraEnabled(cacheable=true)
     public static List<Technician__c> getTechnicians(String searchKey) {
         return [SELECT Id, Name FROM Technician__c WHERE Name LIKE :('%' + searchKey + '%') LIMIT 10];
+        System.debug('hello');
     }
 
     @AuraEnabled
