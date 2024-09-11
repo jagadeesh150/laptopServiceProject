@@ -13,6 +13,7 @@ public with sharing class DefectReportController {
     public static List<Technician__c> getTechnicians(String searchKey) {
         return [SELECT Id, Name FROM Technician__c WHERE Name LIKE :('%' + searchKey + '%') LIMIT 10];
         System.debug('hello');
+        System.debug('second');
     }
 
     @AuraEnabled
