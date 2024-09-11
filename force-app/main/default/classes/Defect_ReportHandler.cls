@@ -41,6 +41,7 @@ public class Defect_ReportHandler {
             else{
                  System.debug(' no defect report created ==========');
                  System.debug(' no defect report created ==========');
+                 System.debug(' no defect report created ==========');
             }
         }
         
