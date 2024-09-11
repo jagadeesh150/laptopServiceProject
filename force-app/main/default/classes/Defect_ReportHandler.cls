@@ -5,6 +5,15 @@ public class Defect_ReportHandler {
         System.debug('defect report==========' + reports);
         String defectedItem;
         String defectReportId; 
+
+
+
+
+
+
+
+
+        
         for(Defect_Report__c dr: reports)
         {
            defectedItem = dr.Defect_Area__c ;
