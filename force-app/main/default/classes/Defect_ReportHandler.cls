@@ -13,7 +13,7 @@ public class Defect_ReportHandler {
 
 
 
-        
+
         for(Defect_Report__c dr: reports)
         {
            defectedItem = dr.Defect_Area__c ;
@@ -39,6 +39,7 @@ public class Defect_ReportHandler {
                 }
            }
             else{
+                 System.debug(' no defect report created ==========');
                  System.debug(' no defect report created ==========');
             }
         }
